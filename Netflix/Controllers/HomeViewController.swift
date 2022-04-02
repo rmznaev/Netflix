@@ -26,9 +26,17 @@ class HomeViewController: UIViewController {
         homeFeedTable.delegate = self
         homeFeedTable.dataSource = self
         
+        configureNavBar()
+        
         let headerView = HeroHeaderView()
         headerView.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: 450)
         homeFeedTable.tableHeaderView = headerView
+    }
+    
+    private func configureNavBar() {
+        var netflixLogo = UIImage(named: "netflix-logo")
+        netflixLogo = netflixLogo?.withRenderingMode(.alwaysOriginal)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: netflixLogo, style: .done, target: self, action: nil)
     }
     
     override func viewDidLayoutSubviews() {

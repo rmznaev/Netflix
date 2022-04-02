@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C45D58AC27F8984D0089E434 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D58AB27F8984D0089E434 /* UIView+Ext.swift */; };
 		C4F347A027F826E00041B57B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F3479F27F826E00041B57B /* AppDelegate.swift */; };
 		C4F347A227F826E00041B57B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F347A127F826E00041B57B /* SceneDelegate.swift */; };
 		C4F347A427F826E00041B57B /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F347A327F826E00041B57B /* MainTabBarViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C45D58AB27F8984D0089E434 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		C4F3479C27F826E00041B57B /* Netflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Netflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F3479F27F826E00041B57B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4F347A127F826E00041B57B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C45D58AA27F898390089E434 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C45D58AB27F8984D0089E434 /* UIView+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C4F3479327F826E00041B57B = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +82,7 @@
 				C4F347BC27F843FA0041B57B /* Views */,
 				C4F347BD27F844090041B57B /* ViewModels */,
 				C4F347B327F82C5C0041B57B /* Controllers */,
+				C45D58AA27F898390089E434 /* Extensions */,
 				C4F3479F27F826E00041B57B /* AppDelegate.swift */,
 				C4F347A127F826E00041B57B /* SceneDelegate.swift */,
 				C4F347A327F826E00041B57B /* MainTabBarViewController.swift */,
@@ -202,6 +213,7 @@
 			files = (
 				C4F347B927F82D330041B57B /* SearchViewController.swift in Sources */,
 				C4F347A427F826E00041B57B /* MainTabBarViewController.swift in Sources */,
+				C45D58AC27F8984D0089E434 /* UIView+Ext.swift in Sources */,
 				C4F347C227F844BF0041B57B /* CollectionViewTableViewCell.swift in Sources */,
 				C4F347BB27F82D680041B57B /* DownloadsViewController.swift in Sources */,
 				C4F347C427F84DA30041B57B /* HeroHeaderView.swift in Sources */,

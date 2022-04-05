@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C45D58AC27F8984D0089E434 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D58AB27F8984D0089E434 /* UIView+Ext.swift */; };
 		C45D58AE27F90F290089E434 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D58AD27F90F290089E434 /* APICaller.swift */; };
+		C45D58B027FCD29E0089E434 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D58AF27FCD29E0089E434 /* Movie.swift */; };
 		C4F347A027F826E00041B57B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F3479F27F826E00041B57B /* AppDelegate.swift */; };
 		C4F347A227F826E00041B57B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F347A127F826E00041B57B /* SceneDelegate.swift */; };
 		C4F347A427F826E00041B57B /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F347A327F826E00041B57B /* MainTabBarViewController.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		C45D58AB27F8984D0089E434 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		C45D58AD27F90F290089E434 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		C45D58AF27FCD29E0089E434 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		C4F3479C27F826E00041B57B /* Netflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Netflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F3479F27F826E00041B57B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4F347A127F826E00041B57B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 		C4F347BE27F844230041B57B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C45D58AF27FCD29E0089E434 /* Movie.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			files = (
 				C4F347B927F82D330041B57B /* SearchViewController.swift in Sources */,
 				C4F347A427F826E00041B57B /* MainTabBarViewController.swift in Sources */,
+				C45D58B027FCD29E0089E434 /* Movie.swift in Sources */,
 				C45D58AC27F8984D0089E434 /* UIView+Ext.swift in Sources */,
 				C4F347C227F844BF0041B57B /* CollectionViewTableViewCell.swift in Sources */,
 				C4F347BB27F82D680041B57B /* DownloadsViewController.swift in Sources */,

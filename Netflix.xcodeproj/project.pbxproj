@@ -86,7 +86,6 @@
 				C4F347BC27F843FA0041B57B /* Views */,
 				C4F347BD27F844090041B57B /* ViewModels */,
 				C4F347B327F82C5C0041B57B /* Controllers */,
-				C45D58AA27F898390089E434 /* Extensions */,
 				C4F3479F27F826E00041B57B /* AppDelegate.swift */,
 				C4F347A127F826E00041B57B /* SceneDelegate.swift */,
 				C4F347A327F826E00041B57B /* MainTabBarViewController.swift */,
@@ -135,6 +134,7 @@
 		C4F347BF27F844610041B57B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C45D58AA27F898390089E434 /* Extensions */,
 			);
 			path = Resources;
 			sourceTree = "<group>";

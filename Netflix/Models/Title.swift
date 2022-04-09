@@ -1,5 +1,5 @@
 //
-//  Movie.swift
+//  Title.swift
 //  Netflix
 //
 //  Created by Ramazan Abdullayev on 05.04.22.
@@ -33,11 +33,11 @@ video = 0;
 
 import Foundation
 
-struct TrendingMoviesResponse: Codable {
-    let results: [Movie]
+struct TrendingTitleResponse: Codable {
+    let results: [Title]
 }
 
-struct Movie: Codable {
+struct Title: Codable {
     let id: Int
     let vote_count: Int
     let vote_average: Double

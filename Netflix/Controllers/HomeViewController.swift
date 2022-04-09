@@ -34,7 +34,7 @@ class HomeViewController: UIViewController {
         headerView.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: 450)
         homeFeedTable.tableHeaderView = headerView
         
-        getTrendingMovies()
+        fetchData()
     }
     
     private func configureNavBar() {
@@ -56,8 +56,44 @@ class HomeViewController: UIViewController {
         homeFeedTable.frame = view.bounds
     }
     
-    private func getTrendingMovies() {
-        APICaller.shared.getTrendingMovies { results in
+    private func fetchData() {
+//        APICaller.shared.getTrendingMovies { results in
+//            switch results {
+//            case .success(let movies):
+//                print(movies)
+//            case .failure(let error):
+//                print(error.localizedDescription)
+//            }
+//        }
+        
+//        APICaller.shared.getTrendingTvs { results in
+//            switch results {
+//            case .success(let movies):
+//                print(movies)
+//            case .failure(let error):
+//                print(error.localizedDescription)
+//            }
+//        }
+        
+//        APICaller.shared.getUpcomingMovies { results in
+//            switch results {
+//            case .success(let movies):
+//                print(movies)
+//            case .failure(let error):
+//                print(error.localizedDescription)
+//            }
+//        }
+        
+//        APICaller.shared.getPopularMovies { results in
+//            switch results {
+//            case .success(let movies):
+//                print(movies)
+//            case .failure(let error):
+//                print(error.localizedDescription)
+//            }
+//        }
+        
+        APICaller.shared.getTopRatedMovies { results in
             switch results {
             case .success(let movies):
                 print(movies)

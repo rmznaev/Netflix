@@ -49,7 +49,7 @@ class UpcomingViewController: UIViewController {
                     self?.upcomingTableView.reloadData()
                 }
             case .failure(let error):
-                print(error )
+                print(error.localizedDescription)
             }
         }
     }

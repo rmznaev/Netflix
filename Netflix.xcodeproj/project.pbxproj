@@ -14,6 +14,8 @@
 		C45D58B6280202E40089E434 /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D58B5280202E40089E434 /* TitleCollectionViewCell.swift */; };
 		C48F54C02802151600AF9CAD /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = C48F54BF2802151600AF9CAD /* SDWebImage */; };
 		C48F54C22802151600AF9CAD /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C48F54C12802151600AF9CAD /* SDWebImageMapKit */; };
+		C48F54C428049B7800AF9CAD /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48F54C328049B7800AF9CAD /* TitleTableViewCell.swift */; };
+		C48F54C628049FF100AF9CAD /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48F54C528049FF100AF9CAD /* TitleViewModel.swift */; };
 		C4F347A027F826E00041B57B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F3479F27F826E00041B57B /* AppDelegate.swift */; };
 		C4F347A227F826E00041B57B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F347A127F826E00041B57B /* SceneDelegate.swift */; };
 		C4F347A427F826E00041B57B /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F347A327F826E00041B57B /* MainTabBarViewController.swift */; };
@@ -33,6 +35,8 @@
 		C45D58AF27FCD29E0089E434 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 		C45D58B127FCD9460089E434 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		C45D58B5280202E40089E434 /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
+		C48F54C328049B7800AF9CAD /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
+		C48F54C528049FF100AF9CAD /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TitleViewModel.swift; path = Netflix/Views/TitleViewModel.swift; sourceTree = SOURCE_ROOT; };
 		C4F3479C27F826E00041B57B /* Netflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Netflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F3479F27F826E00041B57B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4F347A127F826E00041B57B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +126,7 @@
 				C4F347C127F844BF0041B57B /* CollectionViewTableViewCell.swift */,
 				C4F347C327F84DA30041B57B /* HeroHeaderView.swift */,
 				C45D58B5280202E40089E434 /* TitleCollectionViewCell.swift */,
+				C48F54C328049B7800AF9CAD /* TitleTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 		C4F347BD27F844090041B57B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				C48F54C528049FF100AF9CAD /* TitleViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -244,8 +250,10 @@
 				C45D58B6280202E40089E434 /* TitleCollectionViewCell.swift in Sources */,
 				C4F347C427F84DA30041B57B /* HeroHeaderView.swift in Sources */,
 				C4F347A027F826E00041B57B /* AppDelegate.swift in Sources */,
+				C48F54C428049B7800AF9CAD /* TitleTableViewCell.swift in Sources */,
 				C4F347A227F826E00041B57B /* SceneDelegate.swift in Sources */,
 				C45D58AE27F90F290089E434 /* APICaller.swift in Sources */,
+				C48F54C628049FF100AF9CAD /* TitleViewModel.swift in Sources */,
 				C4F347B727F82CFC0041B57B /* UpcomingViewController.swift in Sources */,
 				C4F347B527F82C6C0041B57B /* HomeViewController.swift in Sources */,
 			);

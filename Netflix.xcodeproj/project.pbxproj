@@ -88,6 +88,14 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		C48F54CA2805F7B300AF9CAD /* General */ = {
+			isa = PBXGroup;
+			children = (
+				C48F54C72804BCA200AF9CAD /* SearchResultViewController.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
 		C4F3479327F826E00041B57B = {
 			isa = PBXGroup;
 			children = (
@@ -126,7 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				C48F54C92804BCDD00AF9CAD /* Core */,
-				C48F54C72804BCA200AF9CAD /* SearchResultViewController.swift */,
+				C48F54CA2805F7B300AF9CAD /* General */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";

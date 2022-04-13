@@ -49,7 +49,8 @@ extension SearchResultViewController: UICollectionViewDelegate, UICollectionView
             return UICollectionViewCell()
         }
         
-        cell.backgroundColor = .systemBlue
+        let title = titles[indexPath.row]
+        cell.configure(with: title.poster_path ?? "")
         
         return cell
     }

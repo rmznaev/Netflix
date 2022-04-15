@@ -17,6 +17,8 @@
 		C48F54C428049B7800AF9CAD /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48F54C328049B7800AF9CAD /* TitleTableViewCell.swift */; };
 		C48F54C628049FF100AF9CAD /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48F54C528049FF100AF9CAD /* TitleViewModel.swift */; };
 		C48F54C82804BCA200AF9CAD /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48F54C72804BCA200AF9CAD /* SearchResultViewController.swift */; };
+		C48F54CC280A28C200AF9CAD /* YoutubeSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48F54CB280A28C200AF9CAD /* YoutubeSearchResponse.swift */; };
+		C48F54CE280A2D1200AF9CAD /* TitlePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48F54CD280A2D1200AF9CAD /* TitlePreviewViewController.swift */; };
 		C4F347A027F826E00041B57B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F3479F27F826E00041B57B /* AppDelegate.swift */; };
 		C4F347A227F826E00041B57B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F347A127F826E00041B57B /* SceneDelegate.swift */; };
 		C4F347A427F826E00041B57B /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F347A327F826E00041B57B /* MainTabBarViewController.swift */; };
@@ -39,6 +41,8 @@
 		C48F54C328049B7800AF9CAD /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		C48F54C528049FF100AF9CAD /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TitleViewModel.swift; path = Netflix/Views/TitleViewModel.swift; sourceTree = SOURCE_ROOT; };
 		C48F54C72804BCA200AF9CAD /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		C48F54CB280A28C200AF9CAD /* YoutubeSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeSearchResponse.swift; sourceTree = "<group>"; };
+		C48F54CD280A2D1200AF9CAD /* TitlePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewController.swift; sourceTree = "<group>"; };
 		C4F3479C27F826E00041B57B /* Netflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Netflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4F3479F27F826E00041B57B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4F347A127F826E00041B57B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				C48F54C72804BCA200AF9CAD /* SearchResultViewController.swift */,
+				C48F54CD280A2D1200AF9CAD /* TitlePreviewViewController.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				C45D58AF27FCD29E0089E434 /* Title.swift */,
+				C48F54CB280A28C200AF9CAD /* YoutubeSearchResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -268,9 +274,11 @@
 				C4F347BB27F82D680041B57B /* DownloadsViewController.swift in Sources */,
 				C45D58B6280202E40089E434 /* TitleCollectionViewCell.swift in Sources */,
 				C4F347C427F84DA30041B57B /* HeroHeaderView.swift in Sources */,
+				C48F54CE280A2D1200AF9CAD /* TitlePreviewViewController.swift in Sources */,
 				C4F347A027F826E00041B57B /* AppDelegate.swift in Sources */,
 				C48F54C428049B7800AF9CAD /* TitleTableViewCell.swift in Sources */,
 				C4F347A227F826E00041B57B /* SceneDelegate.swift in Sources */,
+				C48F54CC280A28C200AF9CAD /* YoutubeSearchResponse.swift in Sources */,
 				C45D58AE27F90F290089E434 /* APICaller.swift in Sources */,
 				C48F54C82804BCA200AF9CAD /* SearchResultViewController.swift in Sources */,
 				C48F54C628049FF100AF9CAD /* TitleViewModel.swift in Sources */,

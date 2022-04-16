@@ -13,7 +13,7 @@ class HeroHeaderView: UIView {
         let imageView = UIImageView()
         imageView.clipsToBounds = true
         imageView.contentMode = .scaleAspectFill
-        imageView.image = UIImage(named: "godfather")
+//        imageView.image = UIImage(named: "godfather")
         
         return imageView
     }()
@@ -76,6 +76,12 @@ class HeroHeaderView: UIView {
         NSLayoutConstraint.activate(downloadButtonConstraints)
     }
     
+    public func configure(with model: TitleViewModel) {
+        guard let url = URL(string: "https://image.tmdb.org/t/p/w500\(model.posterURL)") else { return }
+        
+        heroImageView.sd_setImage(with: url)
+    }
+     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

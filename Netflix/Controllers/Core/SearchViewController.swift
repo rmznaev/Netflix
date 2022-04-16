@@ -18,8 +18,10 @@ class SearchViewController: UIViewController {
         return tableView
     }()
     
-    private let searchController: UISearchController = {
-        let controller = UISearchController(searchResultsController: SearchResultViewController())
+    lazy var searchController: UISearchController = {
+        let vc = SearchResultViewController()
+        vc.delegate = self
+        let controller = UISearchController(searchResultsController: vc)
         controller.searchBar.placeholder = "Search for a Movie or Tv show"
         controller.searchBar.searchBarStyle = .minimal
         
@@ -138,6 +140,16 @@ extension SearchViewController: UISearchResultsUpdating {
                     print(error.localizedDescription)
                 }
             }
+        }
+    }
+}
+
+extension SearchViewController: SearchResultViewControllerDelegate {
+    func searchResultViewControllerDidTapItem(_ viewModel: TitlePreviewViewModel) {
+        DispatchQueue.main.async { [weak self] in
+            let vc = TitlePreviewViewController()
+            vc.configure(with: viewModel)
+            self?.navigationController?.pushViewController(vc, animated: true)
         }
     }
 }

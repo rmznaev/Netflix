@@ -68,7 +68,6 @@ extension UpcomingViewController: UITableViewDelegate, UITableViewDataSource {
         }
         
         let title = titles[indexPath.row]
-        cell.selectionStyle = .none
         cell.configure(with: TitleViewModel(titleName: title.original_title ?? title.original_name ?? "Unknown",
                                             posterURL: title.poster_path ?? ""))
         
@@ -84,7 +83,11 @@ extension UpcomingViewController: UITableViewDelegate, UITableViewDataSource {
         
         let title = titles[indexPath.row]
         
-        guard let titleName = title.original_name ?? title.original_title else { return }
+        guard let titleName = title.original_name ?? title.original_title,
+                let overview = title.overview
+        else {
+            return
+        }
         
         APICaller.shared.getMovie(with: titleName) { [weak self] result in
             switch result {
@@ -92,7 +95,7 @@ extension UpcomingViewController: UITableViewDelegate, UITableViewDataSource {
                 DispatchQueue.main.async {
                     let vc = TitlePreviewViewController()
                     vc.configure(with: TitlePreviewViewModel(title: titleName,
-                                                             titleOverview: title.overview ?? "",
+                                                             titleOverview: overview,
                                                              youtubeVideo: videoElement))
                     self?.navigationController?.pushViewController(vc, animated: true)
                 }
